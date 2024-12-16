@@ -74,7 +74,7 @@ class Ui_MainWindow(object):
                 host ="localhost",
                 user ="root",
                 password ="",
-                database ="penjualan"
+                database ="db_penjualan"
             )
             cursor = mydb.cursor()
             idkat = self.lineEdithId.text()

@@ -9,6 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import _mysql_connector as mc
 
 
 class Ui_MainWindow(object):
@@ -76,7 +77,7 @@ class Ui_MainWindow(object):
                 host="localhost",
                 user="root",
                 password="",
-                database="penjualan"
+                database="db_penjualan"
             )
                 self.labelResult.setText("There is Connection")
             except mc.Error as err:
